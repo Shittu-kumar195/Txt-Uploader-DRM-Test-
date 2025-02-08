@@ -28,24 +28,24 @@ from Crypto.Cipher import AES
 from Crypto.Util.Padding import unpad
 from base64 import b64encode, b64decode
 
-photo1 = 'https://envs.sh/PQ_.jpg'
+photo1 = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2RlbD6RuONW1l8slaNnmmNXyVLsU9WjnFtgEnSOD3URuUkPuNJ-BeNBU58fROeFEPYXE-03edwWbpEyVRgduPbOkIVXyhY08v2Cf7XCBffFpHlIg0pQPW3636ma8TfAnzVn1I-uWNwQ8dgRySl0Y9XvQr0itYneBsP36jFm4V0P1m3O7nwGyOKBYeik43/w320-h160/1000052450.jpg'
 getstatusoutput(f"wget {photo1} -O 'photo.jpg'")    
 photo = "photo.jpg"
 
 credit ="Alex:)™~" 
-OWNER = int(os.environ.get("OWNER", 7081036509))
+OWNER = int(os.environ.get("OWNER", 1780523256))
 try: 
     ADMINS=[] 
-    for x in (os.environ.get("ADMINS", "7081036509 7491167754").split()):  
+    for x in (os.environ.get("ADMINS", "1780523256 7672004632").split()):  
         ADMINS.append(int(x)) 
 except ValueError: 
         raise Exception("Your Admins list does not contain valid integers.") 
 ADMINS.append(OWNER)
 
 bot = Client("bot",    
-   bot_token="7451364068:AAHuhmL_f1XsLkMOSIIJSeGCIVB7_fqmicM",    
-   api_id= 20346550,    
-   api_hash= "bc79c3bea7a626887bdc0871eecf0327"
+   bot_token="7672004632:AAHohyBfssnv2Nlscz0tqiji3r1I7pfsdUc",    
+   api_id= 23069582,    
+   api_hash= "b3b56eaf67828684f54d540f684fdf1f"
 )
 
 @bot.on_message(filters.command(["started"]))    
@@ -156,7 +156,7 @@ async def account_login(bot: Client, m: Message):
         MR = raw_text3
 
 
-    await editable.edit("-═════━‧₊˚❀༉‧₊˚.━═════-\nɴᴏᴡ ꜱᴇɴᴅ ᴛʜᴇ **ᴛʜᴜᴍʙ ᴜʀʟ**\nᴇɢ : `ʜᴛᴛᴘꜱ://ɢʀᴀᴘʜ.ᴏʀɢ/ꜰɪʟᴇ/45ꜰ562ᴅᴄ05ʙ2874ᴄ7277ᴇ.ᴊᴘɢ`ᴏʀ ꜱᴇɴᴅ [`no`]\n-═════━‧₊˚❀༉‧₊˚.━═════-")    
+    await editable.edit("-═════━‧₊˚❀༉‧₊˚.━═════-\nɴᴏᴡ ꜱᴇɴᴅ ᴛʜᴇ **ᴛʜᴜᴍʙ ᴜʀʟ**\nᴇɢ : `https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2RlbD6RuONW1l8slaNnmmNXyVLsU9WjnFtgEnSOD3URuUkPuNJ-BeNBU58fROeFEPYXE-03edwWbpEyVRgduPbOkIVXyhY08v2Cf7XCBffFpHlIg0pQPW3636ma8TfAnzVn1I-uWNwQ8dgRySl0Y9XvQr0itYneBsP36jFm4V0P1m3O7nwGyOKBYeik43/w320-h160/1000052450.jpg`ᴏʀ ꜱᴇɴᴅ [`no`]\n-═════━‧₊˚❀༉‧₊˚.━═════-")    
     input6 = message = await bot.listen(editable.chat.id)    
     raw_text6 = input6.text
     thumb = input6.text    
