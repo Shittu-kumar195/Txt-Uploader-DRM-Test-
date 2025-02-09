@@ -80,8 +80,8 @@ async def download_pdf(url, filename):
         raise
 
 
-@bot.on_message(filters.command(["Sorry"]))    
-async def account_login(bot: Client, m: Message):    
+@bot.on_message(filters.command(["scammer"]))    
+async def upload(bot: Client, m: Message):    
     editable = await m.reply_text('**-═════━‧₊˚❀༉‧₊˚.━═════-\n📝 ꜱᴇɴᴅ ᴛxᴛ ꜰɪʟᴇ ꜰᴏʀ ᴅᴏᴡɴʟᴏᴀᴅ**\n-═════━‧₊˚❀༉‧₊˚.━═════-')
     input: Message = await bot.listen(editable.chat.id)
     if input.document:
