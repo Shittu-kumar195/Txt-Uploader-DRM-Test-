@@ -33,19 +33,19 @@ getstatusoutput(f"wget {photo1} -O 'photo.jpg'")
 photo = "photo.jpg"
 
 credit ="Alex:)™~" 
-OWNER = int(os.environ.get("OWNER", 1780523256))
+OWNER = int(os.environ.get("OWNER", 8172163893))
 try: 
     ADMINS=[] 
-    for x in (os.environ.get("ADMINS", "1780523256 7672004632").split()):  
+    for x in (os.environ.get("ADMINS", "8172163893").split()):  
         ADMINS.append(int(x)) 
 except ValueError: 
         raise Exception("Your Admins list does not contain valid integers.") 
 ADMINS.append(OWNER)
 
 bot = Client("bot",    
-   bot_token="7672004632:AAHohyBfssnv2Nlscz0tqiji3r1I7pfsdUc",    
-   api_id= 23069582,    
-   api_hash= "b3b56eaf67828684f54d540f684fdf1f"
+   bot_token="7996158914:AAEoO5TKXTROeg3WhpYd6dqT__3UUTFPXgY",    
+   api_id="20114039",    
+   api_hash= "87297b8f3cc8fc9bbce591ad30da5896"
 )
 
 @bot.on_message(filters.command(["start"]))    
